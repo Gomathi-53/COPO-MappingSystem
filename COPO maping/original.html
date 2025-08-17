@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORM</title>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    const year=document.getElementById('year');
+    const form=document.getElementById('form');
+    const coursename=document.getElementById('coursename');
+    const coursecode=document.getElementById('coursecode');
+    const facname=document.getElementById('facname');
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      const yearvalue = year.value;
+      const coursenameValue = coursename.value;
+      const coursecodeValue = coursecode.value;
+      const facnameValue = facname.value;
+      localStorage.setItem('ye-ar',yearvalue);
+      localStorage.setItem('course-name',coursenameValue);
+      localStorage.setItem('course-code',coursecodeValue);
+      localStorage.setItem('fac-name',facnameValue);
+  
+      window.location.href = "#";
+    })
+    </script>     
+<style >
+   body{
+     background-image:url('img/back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#tab{
+  padding-left: 350px;
+}
+button {
+  position: relative;
+  background-color:#2196F3;;
+  border: ovel;
+  font-size: 22px;
+  color: #FFFFFF;
+  padding: 20px 80px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left:50px;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: inline-block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding:200px;
+  margin:5px;
+  opacity:0;
+  transition: 0.5s
+}
+.btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    <a href="home.html">
+  <i class="fa-solid fa-house" style="font-size:20px;color: white;padding: 20px  20px;
+    background-color:pink;border-radius: 90%"></i></a>
+<table>
+<form id="form">
+<table id="tab">
+<tr>
+<td><b><h1 style="color:rgb(248, 146, 30);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YEAR </h1></b><td><input type="integer"name="year" value="&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20  - 20 "i id="year">
+</tr>
+
+<tr>
+  <td><b><h1 style="color: orange;">INTERNAL  ASSESSMENT</h1></b></td><td><select name="my menu">
+    <option value="number"> </option>
+    <option value="number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+    <option value="number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+    <option value="number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+  </select>
+
+</td></tr>
+<tr>
+<td><b><h1 style="color:orange;">COURSE &nbsp;NAME </h1></b></td><td><input type="text"name="coursename"id="coursename">
+</tr>
+<td><b><h1 style="color:orange;">COURSE &nbsp;CODE </h1></b><td><input type="text"name="coursecode"id="coursecode">
+</tr>
+<tr>
+<td><b><h1 style="color:orange;">FACULTY&nbsp;NAME </h1></b></td><td><input type="text"name="facname"id="facname"></td>
+</tr>
+<br></br>
+</table>
+</br>
+</br>
+</br>
+
+<button class="button"><a href='sem.html' style="color:white;">PREVIOUS</a></button>
+<button class="button" id="info">SUBMIT</button>
+<button class="button"><a href='original.html' style="color:white;">CLEAR</a></button>
+<button class="button"><a href='btl .html' style="color: white;">NEXT</a></button>
+</form>
+</table>
+</body>
+</html>
+

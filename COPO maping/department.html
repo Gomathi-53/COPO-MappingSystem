@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  body{
+    background-image:url('img/deptb.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .title{
+    font-family:'Times New Roman';
+    color:darkcyan;
+    text-align: center;
+    margin-bottom:10px;
+    margin-top:5px;
+}
+.container{
+    position: relative;
+    width: 185px;
+    height: 185px;
+    display:inline-block;
+    border-radius: 20%;
+}
+.image{
+    display:block;
+    width: 185px;
+    height: 185px;
+    border-radius: 20%;
+}
+.overlay{
+    position:absolute;
+    transition:all .3s ease;
+    opacity: 0;
+    background-color:#00b1ba;
+    border-radius: 20%;
+}
+.container:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color:black;
+    font-family:'Times New Roman';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate3d(-50%,-50%);
+    font-size: 30px;
+}
+.overlayLeft{
+    height: 100%;
+    width:0%;
+    top:0%;
+    left:0%;
+    background-color: #00b1ba;
+}
+.overlayRight{
+    height: 100%;
+    width:0%;
+    top:0%;
+    right:0%;
+    background-color:#00b1ba;
+}
+.container:hover .overlayLeft,.container:hover .overlayRight{
+    width: 100%;
+}
+.overlayTop{
+    width: 100%;
+    height:0%;
+    top:0%;
+    left:0%;
+    background-color:#00b1ba;
+}
+.overlayBottom{
+    width: 100%;
+    height:0%;
+    bottom:0%;
+    left:0%;
+    background: color #00b1ba;;
+}
+.container:hover .overlayTop,.container:hover .overlayBottom{
+    height:100%;
+}
+ </style>
+</head>
+<body>
+  <a href="home.html">
+   <i class="fa-solid fa-house" style="font-size:20px;color:skyblue; padding: 20px  20px;margin-top:10px;
+    background-color:rgb(6, 0, 1);border-radius: 90%"></i></a>
+    <table align="center" cellspacing="7" ><tr><td></td>
+  <td><img src="logo.jpg" aly="LOGO" height="150" width="150" style="border-radius:100%;"></td></tr></table>
+<h1 class="title"><b>COLLEGE DEPARTMENTS</b></h1>
+<table align="center" cellspacing="10">
+  <tr>
+  <td><div class="container">
+    <a href="sem.html"><img src="img/deptcivil.jpg" alt="CIVIL" class="image">
+    <div class="overlay overlayLeft">
+      <div class="text"><b>CIVIL</b></div>
+      </div></a>
+    </div></td>
+  <td><div class="container">
+    <a href="sem.html"><img src="img/deptcs.jpg" alt="CSE" class="image">
+   <div class="overlay overlayTop">
+      <div class="text"><b>CSE</b></div>
+      </div></a></div></td>
+  <td><div class="container">
+    <a href="sem.html"><img src="img/depteee.jpg" alt="EEE" class="image">
+        <div class="overlay overlayRight">
+          <div class="text"><b>EEE</b></div>
+          </div></a></div></td></tr>
+
+  <tr>
+    <td><div class="container">
+      <a href="sem.html"><img src="img/deptece.jpg" alt="Avatar" class="image">
+      <div class="overlay overlayRight">
+        <div class="text"><b>ECE</b></div>
+        </div></a>
+      </div></td>
+    <td><div class="container">
+      <a href="sem.html"><img src="img/deptmech.jpg" alt="MECH" class="image">
+      <div class="overlay overlayBottom">
+        <div class="text"><b>MECH</b></div>
+        </div></a></div></td>
+    <td><div class="container">
+      <a href="sem.html"><img src="img/deptit.jpg" alt="IT" class="image">
+          <div class="overlay overlayLeft">
+            <div class="text"><b>IT</b></div>
+            </div></a></div></td></tr>
+
+            </table>
+          
+          </body>
+</html>
+
